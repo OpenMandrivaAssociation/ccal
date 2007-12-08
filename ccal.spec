@@ -4,13 +4,14 @@ Group:		System/Base
 Version:	2.4
 Release:	%mkrel 1
 URL:		http://thunder.eeap.cwru.edu/ccal/index.html
-Summary:	a program to display a calendar together with Chinese calendar.
+Summary:	A program to display a calendar together with Chinese calendar
 Source:		http://thunder.eeap.cwru.edu/ccal/%{name}-%{version}.tar.gz 
 BuildRoot:	%{_tmppath}/%name-%version-%release-root
 Patch0:		ccal-2.4-fix-prefix.patch
 
 %description
-The ccal utility writes a Gregorian calendar together with Chinese calendar to standard output.
+The ccal utility writes a Gregorian calendar together with Chinese
+calendar to standard output.
 
 %prep
 %setup -q
