@@ -6,6 +6,7 @@ Release:	%mkrel 1
 URL:		http://thunder.eeap.cwru.edu/ccal/index.html
 Summary:	A program to display a calendar together with Chinese calendar
 Source:		http://thunder.eeap.cwru.edu/ccal/%{name}-%{version}.tar.gz 
+BuildRoot:	%{_tmppath}/%name-%version-%release-root
 Patch0:		ccal-2.4-fix-prefix.patch
 Requires:	ghostscript
 
