@@ -1,11 +1,11 @@
 Name:		ccal
 License:	GPLv2+
 Group:		System/Base
-Version:	2.4
-Release:	%mkrel 3
-URL:		http://thunder.eeap.cwru.edu/ccal/index.html
+Version:	2.5
+Release:	%mkrel 1
+URL:		http://ccal.chinesebay.com/ccal/ccal.htm
 Summary:	A program to display a calendar together with Chinese calendar
-Source:		http://thunder.eeap.cwru.edu/ccal/%{name}-%{version}.tar.gz 
+Source:		http://ccal.chinesebay.com/ccal/%{name}-%{version}.tar.gz 
 BuildRoot:	%{_tmppath}/%name-%version-%release-root
 Patch0:		ccal-2.4-fix-prefix.patch
 Requires:	ghostscript
