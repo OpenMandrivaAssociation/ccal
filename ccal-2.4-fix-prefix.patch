@@ -1,0 +1,36 @@
+--- Makefile.orig	2007-12-08 21:47:45.000000000 +0800
++++ Makefile	2007-12-08 21:49:02.000000000 +0800
+@@ -10,10 +10,10 @@
+ #CXXFLAGS += -DNO_NAMESPACE
+ 
+ # Binary installation directory
+-BINDIR=/usr/local/bin
++BINDIR=/usr/bin
+ 
+ # Man page installation directory
+-MANDIR=/usr/local/man
++MANDIR=/usr/share/man
+ 
+ # If install is not available, use cp instead
+ INSTALL=install -c
+@@ -44,14 +44,14 @@
+ 	$(CXX) $(CXXFLAGS) -o $@ $^ -lm
+ 
+ install:	ccal
+-	./mkinstalldirs $(BINDIR)
+-	$(INSTALL) ccal $(BINDIR)
+-	$(INSTALL) ccalpdf $(BINDIR)
++	./mkinstalldirs $(DESTDIR)$(BINDIR)
++	$(INSTALL) ccal $(DESTDIR)$(BINDIR)
++	$(INSTALL) ccalpdf $(DESTDIR)$(BINDIR)
+ 
+ install-man:
+-	./mkinstalldirs $(MANDIR)/man1
+-	$(INSTALL) -m 0644 ccal.1 $(MANDIR)/man1
+-	$(INSTALL) -m 0644 ccalpdf.1 $(MANDIR)/man1
++	./mkinstalldirs $(DESTDIR)$(MANDIR)/man1
++	$(INSTALL) -m 0644 ccal.1 $(DESTDIR)$(MANDIR)/man1
++	$(INSTALL) -m 0644 ccalpdf.1 $(DESTDIR)$(MANDIR)/man1
+ 
+ clean:
+ 	$(RM) *.o core ccal
