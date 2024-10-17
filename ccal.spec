@@ -3,7 +3,7 @@ License:	GPLv2+
 Group:		System/Base
 Version:	2.5
 Release:	%mkrel 1
-URL:		http://ccal.chinesebay.com/ccal/ccal.htm
+URL:		https://ccal.chinesebay.com/ccal/ccal.htm
 Summary:	A program to display a calendar together with Chinese calendar
 Source:		http://ccal.chinesebay.com/ccal/%{name}-%{version}.tar.gz 
 BuildRoot:	%{_tmppath}/%name-%version-%release-root
